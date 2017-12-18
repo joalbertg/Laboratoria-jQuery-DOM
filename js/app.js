@@ -3,16 +3,24 @@ function begin() {
 }
 
 function efectos() {
-  $('.mostrar').on('click', function() {
-    $('.deslizante').slideDown(1500);
+  $('#boton-1').on('click', function() {
+    $('#cuadro').fadeTo(3000, 0.25);
   })
 
-  $('.ocultar').on('click', function() {
-    $('.deslizante').slideUp('fast');
+  $('#boton-2').on('click', function() {
+    $('#cuadro').fadeTo('slow', 100);
   })
 
-  $('.mostrar-ocultar').on('click', function() {
-    $('.deslizante').slideToggle();
+  $('#boton-3').on('click', function() {
+    $('#cuadro').fadeOut();
+  })
+
+  $('#boton-4').on('click', function() {
+    $('#cuadro').fadeIn();
+  })
+
+  $('#boton-5').on('click', function() {
+    $('#cuadro').fadeOut().fadeIn();
   })
 }
 
