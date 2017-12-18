@@ -24,10 +24,10 @@ function begin() {
   })
 
   // $('#p-test').css('background-color', 'yellow');
-  $('#p-test').css({
+  /* $('#p-test').css({
     backgroundColor: 'yellow',
     border: '1px solid black'
-  });
+  }); */
 }
 
 window.onload = begin;
