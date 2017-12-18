@@ -1,34 +1,33 @@
-// vanillaJS
-window.onload = function() {
-  console.log('Se ha cargado la ventana semánticamente!!!');
+function begin() {
+  jQuery('#p-test').click(function() {
+    jQuery(this).hide();
+  })
+
+  jQuery('#boton-1').on('click', function() {
+    jQuery('#p-test').show();
+  })
+
+  $('#boton-2').click(function() {
+    $('#p-test').hide('fast');
+  })
+
+  $('#boton-3').click(function() {
+    $('#p-test').show('slow');
+  })
+
+  $('#boton-4').click(function() {
+    $('#p-test').toggle();
+  })
+
+  $('#boton-5').click(function() {
+    $('#p-test').toggle('swing');
+  })
+
+  // $('#p-test').css('background-color', 'yellow');
+  $('#p-test').css({
+    backgroundColor: 'yellow',
+    border: '1px solid black'
+  });
 }
 
-window.addEventListener('load', function() {
-  console.log('Se ha cargado la ventana con eventos múltiples!!!');
-})
-
-document.onready = function() {
-  console.log('Se ha cargado el documento semánticamente!!!');    
-}
-
-// no existe ya que solo ocurre una vez y no se puede prender y apagar
-/* document.addEventListener('ready', function() {
-  console.log('Se ha cargado el documento con eventos múltiples!!!');  
-}) */
-
-// jQuery
-jQuery(window).load(function() {
-  console.log('Se ha cargado la ventana semánticamente con jQuery!!!');  
-})
-
-jQuery(window).on('load', function() {
-  console.log('Se ha cargado la ventana con eventos múltiples con jQuery!!!');  
-})
-
-jQuery(document).ready(function() {
-  console.log('Se ha cargado el documento semánticamente con jQuery!!!');      
-})
-
-jQuery(document).on('ready', function() {
-  console.log('Se ha cargado el documento con eventos múltiples con jQuery!!!');      
-})
+window.onload = begin;
