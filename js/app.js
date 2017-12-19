@@ -30,4 +30,4 @@ function begin() {
   }); */
 }
 
-window.onload = begin;
+jQuery(document).ready(begin);
