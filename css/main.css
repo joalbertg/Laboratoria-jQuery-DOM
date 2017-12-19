@@ -18,3 +18,11 @@
   height: 200px;
   border: 2px solid black;
 }
+
+#animable {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: greenyellow;
+  border: 2px solid green;
+}
