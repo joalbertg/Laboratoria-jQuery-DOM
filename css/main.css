@@ -1,0 +1,13 @@
+.deslizante {
+  height: 120px;
+  display: none;
+}
+
+.deslizante, .mostrar, .ocultar, .mostrar-ocultar {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #ccc;
+  border: 1px solid orange;
+  cursor: pointer;
+}

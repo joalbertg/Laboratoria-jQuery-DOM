@@ -16,4 +16,4 @@ function efectos() {
   })
 }
 
-window.addEventListener('load', begin);
+jQuery(document).ready(begin);
